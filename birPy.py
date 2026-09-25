@@ -440,7 +440,7 @@ def main():
     # ========================================================
 
     employee1 = Employee(
-        "Juan Dela Cruz",
+        "Cardo Dela Cruz",
         "Administrative Officer",
         "GOV-001"
     )
@@ -590,7 +590,7 @@ def main():
     print("------------------------------------------")
 
     found_employee = search_employee(
-        "Juan Dela Cruz"
+        "Cardo Dela Cruz"
     )
 
     if found_employee:
