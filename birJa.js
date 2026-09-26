@@ -524,7 +524,7 @@ function searchEmployee(name) {
 // ============================================================
 
 const employee1 = new Employee(
-    "Juan Dela Cruz",
+    "Cardo Dela Cruz",
     "Administrative Officer",
     "GOV-001"
 );
@@ -735,7 +735,7 @@ console.log("\nEMPLOYEE SEARCH");
 console.log("------------------------------------------");
 
 const foundEmployee =
-    searchEmployee("Juan Dela Cruz");
+    searchEmployee("Cardo Dela Cruz");
 
 if (foundEmployee) {
 
