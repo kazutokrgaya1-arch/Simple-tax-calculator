@@ -53,3 +53,22 @@ const numbers3 = [10, 20, 70]
 
 const total = numbers3.reduce((re, duce) => re + duce,0);
 console.log(total);
+
+//OPtional chaining
+const sstudent={
+    address: {
+        location: "Brgy.Solsogon"
+    }
+};
+const student = {
+    profile:{
+         ...sstudent,
+    name: "Genesis",
+    age:19
+
+    }
+   
+}
+console.log(
+    `${student?.profile?.name} lives in ${student?.profile?.address?.location}`
+    );
