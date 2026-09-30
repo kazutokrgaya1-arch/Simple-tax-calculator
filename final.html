@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Dashboard</title>
+<link rel="stylesheet" href="final.css" >
+</head>
+<body>
+
+<header>
+  <div class="logo">Genesis Andulte</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Exercises</a>
+    <a href="#">About</a>
+  </nav>
+</header>
+ 
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-badge">✦ Interactive Learning Platform</div>
+    <h1>JavaScript<br><span>Hands-On Exercises</span> Dashboard</h1>
+    <p>Interactive exercises compiled in one system. Click any activity to run it live.</p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="welcomeAlert()">Start Learning</button>
+      <button class="btn-secondary" onclick="scrollToWorkspace()">View Exercises</button>
+    </div>
+  </div>
+</section>
+ 
+<div class="workspace" id="workspace">
+ 
+  <!-- OUTPUT -->
+  <main>
+    <div class="section-label">Output Console</div>
+    <div id="output-box">
+      Select an activity from the sidebar to run it here.
+    </div>
+  </main>
+ 
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+ 
+    <!-- Exercise Menu -->
+    <div class="sidebar-section">
+      <div class="sidebar-title">Exercise Menu</div>
+      <div class="exercise-grid">
+        <button class="ex-btn" onclick="activity1()">Act 1</button>
+        <button class="ex-btn" onclick="activity2()">Act 2</button>
+        <button class="ex-btn" onclick="activity3()">Act 3</button>
+        <button class="ex-btn" onclick="activity4()">Act 4</button>
+        <button class="ex-btn" onclick="activity5()">Act 5</button>
+        <button class="ex-btn" onclick="activity6()">Act 6</button>
+        <button class="ex-btn" onclick="activity7()">Act 7</button>
+      </div>
+    </div>
+ 
+    <!-- Exercise 3 Section -->
+    <div class="sidebar-section">
+      <div class="sidebar-title">Exercise 3 — DOM Interactions</div>
+ 
+      <!-- 3.1 Color -->
+      <div class="widget-row">
+        <div class="widget-label"><span class="num">01</span> Background Color</div>
+        <button class="action-btn" id="btn">Change Color</button>
+      </div>
+ 
+      <!-- 3.2 Dark Mode -->
+      <div class="widget-row">
+        <div class="widget-label"><span class="num">02</span> Dark Mode</div>
+        <button class="action-btn" id="toggle-btn">Toggle Dark Mode</button>
+      </div>
+ 
+      <!-- 3.3 List -->
+      <div class="widget-row">
+        <div class="widget-label"><span class="num">03</span> Dynamic List</div>
+        <ul id="myList"><li>Item 1</li></ul>
+        <button class="action-btn" id="addListBtn" style="margin-top:6px">+ Add Item</button>
+      </div>
+ 
+      <!-- 3.4 Remove -->
+      <div class="widget-row">
+        <div class="widget-label"><span class="num">04</span> Remove Element</div>
+        <p id="removePara">This paragraph will be removed.</p>
+        <button class="action-btn danger" id="removeBtn">Remove</button>
+      </div>
+ 
+      <!-- 3.5 Char Counter -->
+      <div class="widget-row">
+        <div class="widget-label"><span class="num">05</span> Character Counter</div>
+        <input type="text" id="typing" placeholder="Type something…">
+        <div class="stat-line">Characters: <span id="charCount">0</span></div>
+      </div>
+ 
+      <!-- 3.6 Calculator -->
+      <div class="widget-row">
+        <div class="widget-label"><span class="num">06</span> Addition Calculator</div>
+        <input type="number" id="number1" placeholder="First number">
+        <input type="number" id="number2" placeholder="Second number">
+        <button class="action-btn" id="addNumber">Calculate</button>
+        <div class="stat-line">Result: <span id="result">—</span></div>
+      </div>
+ 
+      <!-- 3.7 Image -->
+      <div class="widget-row">
+        <div class="widget-label"><span class="num">07</span> Image Switcher</div>
+        <img id="myImage" src="meme.jpg" alt="meme">
+        <button class="action-btn" id="changeImg">Change Image</button>
+      </div>
+ 
+      <!-- 3.8 To-Do -->
+      <div class="widget-row">
+        <div class="widget-label"><span class="num">08</span> To-Do List</div>
+        <input type="text" id="todoInput" placeholder="Enter task…">
+        <button class="action-btn" id="todoBtn">+ Add Task</button>
+        <ul id="todoList"></ul>
+      </div>
+    </div>
+ 
+    <!-- Grade Calculator -->
+    <div class="sidebar-section">
+      <div class="sidebar-title">Grade Calculator</div>
+      <div class="calc-grid">
+        <input type="number" id="quiz" placeholder="Quiz average (20%)" min="1" max="100">
+        <input type="number" id="exam" placeholder="Exam score (30%)" min="1" max="100">
+        <input type="number" id="mco" placeholder="MCO score (50%)" min="1" max="100">
+      </div>
+      <div class="btn-row">
+        <button class="action-btn" id="calculate">Calculate</button>
+        <button class="action-btn danger" id="reset">Reset</button>
+      </div>
+      <p id="results"></p>
+    </div>
+ 
+  </aside>
+</div>
+
+<footer>© 2026 JavaScript Hands-On Project — Built for Learning</footer>
+
+<script src="final.js"></script>
+</body>
+</html>
